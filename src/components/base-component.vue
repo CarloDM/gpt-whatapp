@@ -1,9 +1,11 @@
   <script>
 
   export default {
-    name:'base',
+    name:'baseComp',
     data(){
+      return{
 
+      }
     },
     watch:{},
     methods:{},

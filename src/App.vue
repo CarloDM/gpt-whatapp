@@ -1,11 +1,16 @@
   <script>
-  import Base from './components/base-component.vue';
-  name:'App';
-  export default {
-    data(){
+  import BaseComp from './components/base-component.vue';
+  import {store} from './store/store.js'
+  // import OpenAI from "openai";
 
+  export default {
+    name:'App',
+    data(){
+      return{
+        store
+      }
     },
-    components:{Base},
+    components:{BaseComp},
     methods:{},
     mounted(){},
   }
@@ -15,7 +20,7 @@
 <template>
   <div class="main_wrapper">
 
-    <Base />
+    <BaseComp />
 
   </div>
 </template>
